@@ -1,0 +1,111 @@
+
+1) 
+void main() {
+
+final List nameList = ['Bilal', 'Bilal', 'Bilal', 'Owais', 'Owais','Owais'];
+
+print(nameList.toSet());
+
+}
+
+
+2) 
+void main() {
+
+final List numList = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
+final List numList2=[];
+	for(var i=0 ;i<=numList.length-1;i++){
+	num remainder = numList[i].remainder(2); 
+		if(remainder==0){
+		numList2.add(numList[i]);
+		}
+
+	}
+print(numList2);
+}
+
+
+3)
+
+
+
+4) void main() {
+
+for(var i=1 ;i<=15;i++){
+
+int multiple = i*7;
+print("7 x $i =$multiple");
+
+
+}
+
+}
+
+
+5
+void main() {
+
+final List fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+
+for(var i=0 ;i<=fruits.length-1;i++){
+
+print(fruits[i]);
+
+
+}
+
+}
+
+
+6) 
+void main() {
+
+for(var i=1 ;i<=100;i++){
+
+int multiple = i*5;
+print("5 x $i =$multiple");
+
+
+}
+
+}
+
+7)void main() {
+
+num c =18;
+
+num fahrenhiet=(c * 9/5) + 32;
+
+num celsius = (5/9 * (fahrenhiet - 32)).round();
+
+
+
+print("celsious $c is fahrenhiet $fahrenhiet");
+print("fahrenhiet $fahrenhiet is celsious $celsius");
+
+
+}
+
+
+9)import 'dart:io';
+void main() {
+ print("Enter a character..");
+   final List  vowel = ['a','e','i','o','u'];
+    var a = stdin.readLineSync();
+  if (vowel.contains(a)){
+  print(true);
+
+  }else{
+
+  print(false);
+  }
+
+}
+
+
+11) void main() {
+List names= ['Ahmed', 'Bilal','Muhammad', 'Owais', 'Muhmmad', 'Ali', 'Ahmed'];
+
+print(names.toSet().toList());
+
+}
