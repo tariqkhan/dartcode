@@ -1,0 +1,105 @@
+1) 
+import 'dart:io';
+
+void main() {
+  String? s = stdin.readLineSync();
+  if (s != null){
+    int n = int.parse(s);
+    var fact =1;
+    for(var i=n;i>0;i--){
+        fact =fact *i;
+    }
+    print(fact);
+
+  }
+}
+
+
+2)import 'dart:io';
+
+void main() {
+  String? s = stdin.readLineSync();
+  if (s != null){
+    int n = int.parse(s);
+
+    for(var i=1;i<n;i++){
+       for(var n =1 ;n<=i;n++){
+           stdout.write(i);
+       }
+       print(" ");
+
+    }
+	
+3)import 'dart:io';
+
+void main() {
+ print("Enter number of element in series?")
+  String? s = stdin.readLineSync();
+  if (s != null){
+    int n = int.parse(s);
+  num z=0;
+    for(var i=1;i<n;i++){
+       print("Please Enter your   $i input number ");
+         String? t = stdin.readLineSync();
+        if (t != null){
+        int z = int.parse(t);
+        z = z+0;
+      }
+  }
+  print(z);
+  }
+}
+
+================================================================
+void main() {
+var numlist =[1 , 5 , 9 , 13 , 17 , 21 , 25 , 29 , 33 , 37];
+num total =0;
+    for(var i=0;i<numlist.length;i++){
+        total = total + numlist[i];
+      }
+  
+    print(total);
+}
+
+
+4) void main() {
+var numlist =[1, 3, 3, 7, 4, 3, 2, 3, 3];
+num total =0;
+num count =0;
+num big=0;
+num bignum=0;
+    for(var i=0;i<numlist.length;i++){
+        num count =0;
+        for(var n=0;n<numlist.length;n++){
+            if(numlist[i]==numlist[n]){
+                count =count +1;
+            }
+            
+        }    
+        if(count>big){
+          big =count ;
+          bignum =numlist[i];
+        }
+      }
+  
+    print(bignum);
+}
+
+5)void main() {
+var numlist =[7, 9, 5, 11, 7 ,4 ,12, 6 ,2 ,11];
+num total =0;
+num count =0;
+num diff=0;
+num smalldiff=0;
+    for(var i=0;i<numlist.length;i++){
+        num count =0;
+        for(var n=0;n<numlist.length;n++){
+           diff =  numlist[i]-numlist[n];
+        }    
+        if(smalldiff<diff){
+         smalldiff = diff;
+        }
+      }
+  
+    print(smalldiff);
+}
